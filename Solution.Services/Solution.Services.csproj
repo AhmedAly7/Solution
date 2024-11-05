@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="IServices\Custom\" />
+    <Folder Include="Services\Custom\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Solution.Core\Solution.Core.csproj" />
+    <ProjectReference Include="..\Solution.Data\Solution.Data.csproj" />
+    <ProjectReference Include="..\Solution.DTO\Solution.DTO.csproj" />
+    <ProjectReference Include="..\Solution.Infrastructure\Solution.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
